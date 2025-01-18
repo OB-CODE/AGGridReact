@@ -125,6 +125,17 @@ export const GridExample = () => {
   return (
     <div style={containerStyle}>
       <div style={gridStyle}>
+        <div className="flex flex-row w-full justify-between pb-3">
+          <button className="bg-fuchsia-500 hover:text-black shadow-sm rounded-md hover:bg-fuchsia-300 py-1 m-1 px-3">
+            Update Via Row Data
+          </button>
+          <button className="bg-fuchsia-500 hover:text-black shadow-sm rounded-md hover:bg-fuchsia-300 py-1 m-1 px-3">
+            Update Via Transactions
+          </button>
+          <button className="bg-fuchsia-500 hover:text-black shadow-sm rounded-md hover:bg-fuchsia-300 py-1 m-1 px-3">
+            Update Via ...
+          </button>
+        </div>
         <AgGridReact
           rowData={rowData}
           columnDefs={columnDefs}
